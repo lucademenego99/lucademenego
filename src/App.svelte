@@ -100,6 +100,8 @@
     box-sizing: border-box;
     position: relative;
     right: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   main .main * {

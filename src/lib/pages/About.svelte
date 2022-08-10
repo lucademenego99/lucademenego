@@ -58,4 +58,30 @@
 		height: 1px;
 		background-color: var(--secondary-color);
 	}
+
+    img {
+        object-fit: contain;
+    }
+
+    @media (max-width: 1200px) {
+		.about-me .row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 60%;
+        }
+	}
+
+    @media (max-width: 750px) {
+		.about-me .row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+        }
+	}
 </style>

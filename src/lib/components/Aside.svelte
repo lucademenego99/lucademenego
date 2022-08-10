@@ -48,7 +48,7 @@
 
 	aside .social .divider {
 		content: "";
-		width: 6px;
+		width: 3px;
 		border-radius: 7px;
 		height: var(--divider-height);
 		margin: 0px auto;

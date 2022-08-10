@@ -8,9 +8,9 @@
 
     onMount(() => {
         sectionElement.style.width = width + "%";
-        sectionElement.style.height = "100vh";
+        sectionElement.style.minHeight = "100vh";
         sectionElement.style.left = (95 - width) + "%";
-        sectionElement.style.top = (100 - height) + "vh";
+        sectionElement.style.top = (90 - height) + "vh";
     });  
 </script>
 
@@ -21,5 +21,6 @@
 <style>
     .section {
 		position: relative;
+        padding-bottom: 10%;
 	}
 </style>
