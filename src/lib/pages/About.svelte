@@ -1,32 +1,10 @@
 <div class="about-me" id="about">
-    <div class="title">
-        <h3>About me</h3>
-    </div>
+    <div class="title-container">
+		<h1 class="title-num">01.</h1>
+		<h2 class="title">about me</h2>
+	</div>
     <div class="row">
-        <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Proin eget vehicula nulla, non posuere lorem. Cras sed
-            interdum metus, quis feugiat tellus. Ut sodales massa
-            eget consequat hendrerit. Ut et metus turpis. Nullam eu
-            urna venenatis, euismod ante ac, bibendum ligula.
-            Pellentesque in maximus ligula. Orci varius natoque
-            penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Nunc ante lorem, eleifend sed quam
-            mattis, volutpat lacinia odio. Cras vulputate dolor in
-            nibh tristique pretium. Sed nec odio ac urna maximus
-            semper in dapibus diam. Etiam lacinia lorem a lectus
-            laoreet convallis. Nulla pulvinar vel ante at vulputate.
-            Vivamus vitae enim nulla. Nunc turpis nisi, posuere sit
-            amet magna vel, gravida finibus arcu. Morbi molestie
-            elit a felis consequat ultrices. Nam consequat sed elit
-            vitae dictum. Pellentesque tempor ante in blandit
-            facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos.
-            Nullam sagittis arcu a ex ultrices, vulputate cursus
-            erat dignissim. Duis ut iaculis purus. Vestibulum vel
-            accumsan orci, et mollis metus. Sed metus risus, viverra
-            non tortor id, vestibulum rutrum ante.
-        </div>
+        <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et dui lacinia, viverra lacus vitae, ultrices massa. Donec vehicula luctus lorem, ut volutpat eros pellentesque in. Vestibulum ut dolor at ligula fringilla varius a vel augue. Sed eu dignissim mi, non consequat sapien. Sed massa diam, cursus at posuere nec, ultrices et nisi. Nulla at nisi justo. Fusce sodales nec mauris ut egestas. Integer facilisis leo et tortor elementum, at eleifend odio placerat. Maecenas vestibulum convallis nulla, in eleifend nulla ultricies ut. Praesent mattis libero eu purus accumsan, in fringilla eros consectetur. Integer eu justo dapibus eros fermentum mattis sed ac dolor. Donec erat lectus, imperdiet et erat at, auctor aliquam ante. Aenean feugiat odio a turpis auctor, non venenatis nibh sollicitudin. Aenean efficitur justo quis nunc blandit faucibus.</p>
         <img
             src="https://picsum.photos/500/500"
             alt="Myself"
@@ -36,52 +14,44 @@
 
 <style>
     .about-me {
-		color: var(--secondary-text-color);
-	}
-
-    .about-me .row {
+		color: rgb(212, 212, 212);
 		display: flex;
-		flex-direction: row;
-		gap: 4rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 300px;
 	}
 
-    .title {
-		font-size: var(--large-font-size);
+	.title-container {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.title-num {
+		display: inline;
+		font-weight: 100;
+		font-size: 45px;
+		margin: 0;
+		padding: 0;
 		color: var(--primary-color);
-		margin-bottom: 3rem;
 	}
 
-    .title h3::after {
-		content: "";
-		display: block;
-		width: 50%;
-		height: 1px;
-		background-color: var(--secondary-color);
+	.title {
+		font-weight: 100;
+		display: inline;
+		font-size: 30px;
+		margin: 0;
+		padding: 0;
 	}
 
-    img {
-        object-fit: contain;
+    .row {
+        width: 60%;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
     }
-
-    @media (max-width: 1200px) {
-		.about-me .row {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        img {
-            width: 60%;
-        }
-	}
-
-    @media (max-width: 750px) {
-		.about-me .row {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        img {
-            width: 100%;
-        }
-	}
 </style>

@@ -12,63 +12,41 @@
 <div class="app">
   <Header />
   <main>
-    <Aside />
+    <!-- <Aside /> -->
     <div class="main">
-      <Section content={Presentation} width="80" height="70" />
-      <Section content={About} width="73" height="80" />
-      <Section content={Experience} width="80" height="70" />
-      <Section content={Projects} width="73" height="80" />
-      <Section content={Contact} width="80" height="70" />
+      <Section content={Presentation} width="100%" height="calc(100vh - var(--header-height))" />
+      <Section content={About} width="100%" height="auto" />
+      <Section content={Experience} width="100%" height="auto" />
+      <Section content={Projects} width="100%" height="auto" />
+      <Section content={Contact} width="100%" height="auto" />
     </div>
   </main>
 </div>
 
 <svelte:head>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap");
+    /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap"); */
 
-    /* Main body element */
-    body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Montserrat", sans-serif;
-      background-color: var(--background-color);
-    }
-
-    /* Scrollbar */
-    ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
-      background-color: var(--background-color);
-    }
-
-    ::-webkit-scrollbar {
-      width: 6px;
-      background-color: var(--background-color);
-    }
-
-    ::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      background-color: var(--primary-color);
-    }
+    
   </style>
 </svelte:head>
 
 <style>
   :root {
-    --header-height: 75px;
+    --header-height: 100px;
     --aside-width: 25px;
     --main-text-color: white;
     --secondary-text-color: #ccc;
     --darker-text-color: rgb(184, 184, 184);
     --grey-light-color: #6b6e70;
     --grey-color: #474b4f;
-    --background-color: #222629;
-    --primary-color: #86c232;
+    --background-color: #15212c;
+    --background-color-linear: linear-gradient(
+      to bottom,
+      #15212c 0%,
+      #131a24 60%
+    );
+    --primary-color: #9B37FF;
     --secondary-color: #61892f;
     --small-font-size: 14px;
     --medium-font-size: 16px;
@@ -95,8 +73,8 @@
   }
 
   main .main {
-    width: calc(100%);
-    margin-left: calc(var(--aside-width) * 3 / 2);
+    width: 100%;
+    /* margin-left: calc(var(--aside-width) * 3 / 2); */
     box-sizing: border-box;
     position: relative;
     right: 0;

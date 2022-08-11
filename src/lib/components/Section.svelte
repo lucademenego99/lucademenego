@@ -7,10 +7,8 @@
     let sectionElement: HTMLElement;
 
     onMount(() => {
-        sectionElement.style.width = width + "%";
-        sectionElement.style.minHeight = "100vh";
-        sectionElement.style.left = (95 - width) + "%";
-        sectionElement.style.top = (90 - height) + "vh";
+        sectionElement.style.width = width;
+        sectionElement.style.height = height;
     });  
 </script>
 
@@ -21,6 +19,6 @@
 <style>
     .section {
 		position: relative;
-        padding-bottom: 10%;
+        /* padding-bottom: 10%; */
 	}
 </style>

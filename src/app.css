@@ -1,0 +1,147 @@
+/* Main body element */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "K2D Medium Regular";
+    background-color: var(--background-color);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--primary-color);
+}
+
+@font-face {
+    font-family: "K2D Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Italic"), url("@/assets/fonts/k2d/K2D-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Bold"), url("@/assets/fonts/k2d/K2D-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Bold Italic"), url("@/assets/fonts/k2d/K2D-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D Thin Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Thin Regular"), url("@/assets/fonts/k2d/K2D-Thin.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D ExtraLight Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D ExtraLight Regular"),
+        url("@/assets/fonts/k2d/K2D-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D Light Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Light Regular"), url("@/assets/fonts/k2d/K2D-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D Medium Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Medium Regular"), url("@/assets/fonts/k2d/K2D-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D SemiBold Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D SemiBold Regular"),
+        url("@/assets/fonts/k2d/K2D-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D ExtraBold Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D ExtraBold Regular"),
+        url("@/assets/fonts/k2d/K2D-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D Thin Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Thin Italic"), url("@/assets/fonts/k2d/K2D-ThinItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D ExtraLight Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D ExtraLight Italic"),
+        url("@/assets/fonts/k2d/K2D-ExtraLightItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D Light Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Light Italic"), url("@/assets/fonts/k2d/K2D-LightItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D Medium Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D Medium Italic"),
+        url("@/assets/fonts/k2d/K2D-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D SemiBold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D SemiBold Italic"),
+        url("@/assets/fonts/k2d/K2D-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "K2D ExtraBold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("K2D ExtraBold Italic"),
+        url("@/assets/fonts/k2d/K2D-ExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Jockey-One";
+    font-style: normal;
+    font-weight: normal;
+    src: local("jockey one"), url("@/assets/fonts/jockey-one/JockeyOne-Regular.ttf") format("truetype");
+}

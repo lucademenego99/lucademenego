@@ -1,29 +1,32 @@
 <header>
     <nav>
-        <div class="resume">
+        <!-- <div class="resume">
             <a href="/resume.pdf">Resume</a>
-        </div>
+        </div> -->
         <div class="nav">
             <ol>
                 <li>
-                    <a href="#about">About me</a>
+                    <a href="#about">about me</a>
                 </li>
                 <li>
-                    <a href="#experience">Experience</a>
+                    <a href="#experience">experience</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects">projects</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">contact</a>
                 </li>
             </ol>
         </div>
+		<div class="divider"></div>
     </nav>
 </header>
 
 <style>
     header {
+		font-family: "Jockey-One";
+		letter-spacing: 1px;
 		height: var(--header-height);
 		display: flex;
 		align-items: center;
@@ -32,22 +35,22 @@
 
 	nav {
 		width: 100%;
-		padding: 0 3rem 0 1rem;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		flex-direction: row;
-		font-family: "monospace";
+		flex-direction: column;
 	}
 
 	.nav {
+		width: 100%;
 		display: flex;
 		flex-direction: row;
 		gap: 5rem;
 		align-items: center;
+		justify-content: center;
 	}
 
 	.nav ol {
+		width: 35%;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -61,21 +64,19 @@
 
 	.nav ol li a {
 		padding: 10px;
-		font-size: var(--small-font-size);
+		font-size: 20px;
 		text-decoration: none;
-		color: var(--secondary-text-color);
+		color: white;
 		transition: color 0.5s ease-in-out;
 	}
 
 	.nav ol li a:hover {
-		padding: 10px;
-		font-size: var(--small-font-size);
-		text-decoration: none;
 		color: var(--primary-color);
 	}
 
 	.nav ol li a::before {
-		content: "✦" counter(item) ".";
+		transition: color 0.5 ease-in-out;
+		content: "0" counter(item) ".";
 		padding-right: 5px;
 		color: var(--primary-color);
 	}
@@ -90,5 +91,11 @@
 	nav .resume a {
 		text-decoration: none;
 		color: var(--primary-color);
+	}
+
+	.divider {
+		width: 50%;
+		height: 1px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	}
 </style>
