@@ -54,4 +54,19 @@
         align-items: center;
         gap: 3rem;
     }
+
+	.about {
+		font-family: "K2D Light Regular";
+		letter-spacing: 0.04em;
+		font-weight: 100;
+		font-size: 16px;
+	}
+
+	img {
+		filter: opacity(50%) blur(2px) drop-shadow(18px 18px 5px var(--primary-color));
+		transition: filter 0.2s ease-in-out;
+	}
+	img:hover {
+		filter: none;
+	}
 </style>

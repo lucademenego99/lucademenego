@@ -210,6 +210,12 @@
 		display: flex;
 		flex-direction: column;
 		padding: 20px;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.card:hover {
+		border-radius: 0px;
+		background-color: var(--primary-color-less-alpha);
 	}
 
 	.card-title {
@@ -273,7 +279,8 @@
 
 	.work, .study {
 		color: black;
-		background-color: #430D79;
+		background-color: var(--primary-color-dark);
+		transition: background-color 0.2s ease-in-out;
 		border-radius: 37px;
 		width: 450px;
 		display: flex;
@@ -289,6 +296,14 @@
 		letter-spacing: 0.08em;
 		font-weight: bold;
 		font-size: 16px;
+	}
+
+	.work:hover {
+		background-color: var(--primary-color-dark-bright);
+	}
+
+	.study:hover {
+		background-color: var(--secondary-color-bright);
 	}
 
 	.work-drop, .study-drop {
@@ -328,6 +343,6 @@
 	}
 
 	.study {
-		background-color: #00489b;
+		background-color: var(--secondary-color);
 	}
 </style>

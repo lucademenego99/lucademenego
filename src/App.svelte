@@ -1,6 +1,7 @@
 <script lang="ts">
   import Header from "./lib/components/Header.svelte";
   import Aside from "./lib/components/Aside.svelte";
+  import Footer from "./lib/components/Footer.svelte";
   import Section from "./lib/components/Section.svelte";
   import Presentation from "./lib/pages/Presentation.svelte";
   import About from "./lib/pages/About.svelte";
@@ -21,6 +22,7 @@
       <Section content={Contact} width="100%" height="auto" />
     </div>
   </main>
+  <Footer />
 </div>
 
 <svelte:head>
@@ -47,7 +49,13 @@
       #131a24 60%
     );
     --primary-color: #9B37FF;
-    --secondary-color: #61892f;
+    --primary-color-dark: #430D79;
+    --primary-color-dark-bright: #4b1383;
+    --primary-color-bright: #a850ff;
+    --primary-color-alpha: #9b37ffb0;
+    --primary-color-less-alpha: #9b37ff2f;
+    --secondary-color: #00489b;
+    --secondary-color-bright: #0c53a5;
     --small-font-size: 14px;
     --medium-font-size: 16px;
     --large-font-size: 20px;
