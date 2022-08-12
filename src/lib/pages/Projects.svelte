@@ -2,10 +2,10 @@
 	import GithubIcon from "../../assets/github.svg";
 	import TiddlywikiIcon from "../../assets/tiddlywiki.svg";
 	import JupyterIcon from "../../assets/jupyter.svg";
+	import DocumentIcon from "../../assets/document.svg";
 
 	import PrimaryButton from "../components/PrimaryButton.svelte";
 	import SecondaryButton from "../components/SecondaryButton.svelte";
-import { text } from "svelte/internal";
 </script>
 
 <div class="projects" id="projects">
@@ -21,7 +21,7 @@ import { text } from "svelte/internal";
 		<div class="project-main">
 			<h3 class="project-title">Interactive Code Playgrounds</h3>
 			<div class="description">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et dui lacinia, viverra lacus vitae, ultrices massa. Donec vehicula luctus lorem, ut volutpat eros pellentesque in.</p>
+				<p>A front-end web technology that integrates executable code in HTML slideshows.  This incremental evolution of traditional slideshows aims to reduce friction in learning to code, and enables more scaffolded and active teaching.</p>
 			</div>
 			<div class="buttons">
 				<PrimaryButton text="View it on Github" icon="{GithubIcon}" />
@@ -49,11 +49,59 @@ import { text } from "svelte/internal";
 		<div class="project-main flipped">
 			<h3 class="project-title flipped">Unsupervised Domain Adaptation</h3>
 			<div class="description flipped">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et dui lacinia, viverra lacus vitae, ultrices massa. Donec vehicula luctus lorem, ut volutpat eros pellentesque in.</p>
+				<p>Collection of methods concerning unsupervised domain adaptation techniques, namely: Deep Domain Confusion, Domain Adversarial NN, Domain Separation Networks, Entropy Minimization vs. Diversity Maximization.</p>
 			</div>
 			<div class="buttons">
 				<PrimaryButton text="View it on Github" icon="{GithubIcon}" />
 				<SecondaryButton text="Notebook" icon="{JupyterIcon}" />
+			</div>
+		</div>
+		<img
+            src="https://picsum.photos/500/300"
+            alt="Myself"
+        />
+	</div>
+
+	<div class="project">
+		<img
+            src="https://picsum.photos/500/300"
+            alt="Myself"
+        />
+		<div class="project-main">
+			<h3 class="project-title">Distributed Multi-level cache</h3>
+			<div class="description">
+				<p>Implementation of a distributed architecture consisting of multiple caches, guaranteeing client-centric consistency in an environment in which caches may fail by crashing.</p>
+			</div>
+			<div class="buttons">
+				<PrimaryButton text="View it on Github" icon="{GithubIcon}" />
+				<SecondaryButton text="Paper" icon="{DocumentIcon}" />
+			</div>
+		</div>
+		<div class="keywords">
+			<ul>
+				<li>Java</li>
+				<li>Akka</li>
+				<li>JUnit Tests</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="project flipped">
+		<div class="keywords">
+			<ul class="flipped">
+				<li>C++</li>
+				<li>ROS</li>
+				<li>Clipper</li>
+			</ul>
+		</div>
+		<div class="project-main flipped">
+			<h3 class="project-title flipped">Evader and Pursuer Game</h3>
+			<div class="description flipped">
+				<p>This project contains a set of devised algorithms allowing to find collision-free Dubins shortest paths for a robot moving in an environment filled with obstacles. Finally, two robots compete between each other in an evader-pursuer game.</p>
+			</div>
+			<div class="buttons">
+				<PrimaryButton text="View it on Github" icon="{GithubIcon}" />
+				<SecondaryButton text="Paper" icon="{DocumentIcon}" />
 			</div>
 		</div>
 		<img
@@ -102,7 +150,7 @@ import { text } from "svelte/internal";
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		margin: 2rem 0;
+		margin: 1rem 0 6rem 0;
 	}
 
 	.project.flipped {
@@ -128,8 +176,25 @@ import { text } from "svelte/internal";
 		font-weight: 100;
 		color: white;
 		padding: 0;
-		margin: 0 0 15px 0;
+		margin: 0;
 		letter-spacing: 0.08em;
+	}
+
+	.project-title::after {
+		content: "";
+		display: block;
+		width: 105%;
+		border-radius: 17px;
+		height: 7px;
+		z-index: -1;
+		background-color: var(--secondary-color);
+		margin: 0 0 15px 0;
+		position: relative;
+		bottom: 17px;
+	}
+
+	.project-title.flipped::after {
+		left: -5%;
 	}
 
 	.description {

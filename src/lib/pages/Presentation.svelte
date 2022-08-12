@@ -7,7 +7,7 @@
 		<h1>Luca De Menego</h1>
 		<p>Backend, Frontend, App Developer</p>
 	</div>
-	<img class="down-icon" src={DownArrowIcon} alt="Go Down" />
+	<a href="#about" class="down-icon"><img src={DownArrowIcon} alt="Go Down" /></a>
 </div>
 
 <style>

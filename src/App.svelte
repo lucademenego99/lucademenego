@@ -13,7 +13,6 @@
 <div class="app">
   <Header />
   <main>
-    <!-- <Aside /> -->
     <div class="main">
       <Section content={Presentation} width="100%" height="calc(100vh - var(--header-height))" />
       <Section content={About} width="100%" height="auto" />
@@ -43,11 +42,6 @@
     --grey-light-color: #6b6e70;
     --grey-color: #474b4f;
     --background-color: #15212c;
-    --background-color-linear: linear-gradient(
-      to bottom,
-      #15212c 0%,
-      #131a24 60%
-    );
     --primary-color: #9B37FF;
     --primary-color-dark: #430D79;
     --primary-color-dark-bright: #4b1383;

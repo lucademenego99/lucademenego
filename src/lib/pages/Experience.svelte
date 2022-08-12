@@ -3,7 +3,7 @@
 	import VueIcon from "../../assets/vue-2.svg";
 	import FlutterIcon from "../../assets/flutter-2.svg";
 	import DownIcon from "../../assets/down-arrow.svg";
-	
+
 	let showWork1 = false;
 	let showWork2 = false;
 	let showStudy1 = false;
@@ -24,7 +24,8 @@
 			<div class="card-description">
 				<p>
 					Worked on different projects based on OOP - C#, Go, Python,
-					Node.js.
+					Node.js. Developed RESTful APIs, remote procedure calls
+					based on gRPC and microservices architectures.
 				</p>
 			</div>
 		</div>
@@ -36,7 +37,9 @@
 			<div class="card-description">
 				<p>
 					Competent in basic HTML, CSS, JS/TS, as well as web
-					frameworks like Vue.js and Svelte.
+					frameworks like Vue.js, Svelte and Yii2. Implemented 3D web
+					applications using Three.js, created npm modules exported as
+					web components.
 				</p>
 			</div>
 		</div>
@@ -48,7 +51,8 @@
 			<div class="card-description">
 				<p>
 					Developed various Flutter applications for both iOS and
-					Android
+					Android. Worked with ARKit and ARCore Flutter plugins, while
+					extending them with new features.
 				</p>
 			</div>
 		</div>
@@ -56,104 +60,58 @@
 	<div class="work-studies">
 		<div class="tab">
 			<h3>Work.</h3>
-			<div class="work" on:click="{() => showWork1 = !showWork1}">
+			<div class="work" on:click={() => (showWork1 = !showWork1)}>
 				<p class="tab-item-title">Internship @ SpazioDati (TN)</p>
-				<img src="{DownIcon}" alt="" class:rotate="{showWork1}">
+				<img src={DownIcon} alt="" class:rotate={showWork1} />
 			</div>
-			<div class="work-drop" class:shown="{showWork1}">
+			<div class="work-drop" class:shown={showWork1}>
+				<p><strong>Feb 2021 - Jun 2021</strong></p>
 				<p>
-					Developed a web application for the SpazioDati platform,
-					which allows users to upload and share their data.
+					Developed a notification centre based on gRPC and Protocol
+					Buffers, which was used to send notifications to users while
+					exploiting Firebase Cloud Messaging.
 				</p>
-				<p>
-					Worked on the frontend and backend of the application,
-					using the following technologies:
-				</p>
+				<p>Integrated the system with:</p>
 				<ul>
-					<li>
-						<strong>Frontend:</strong> Vue.js, Svelte, HTML, CSS,
-						JS/TS
-					</li>
-					<li>
-						<strong>Backend:</strong> Node.js, Express, MongoDB,
-						GraphQL
-					</li>
+					<li>logs - using sentry</li>
+					<li>metrics</li>
+					<li>distributed tracing</li>
 				</ul>
+				<p>
+					Incorporated it in the production site based on Django and
+					React.
+				</p>
 			</div>
-			<div class="work" on:click="{() => showWork2 = !showWork2}">
+			<div class="work" on:click={() => (showWork2 = !showWork2)}>
 				<p class="tab-item-title">Developer @ Thema Optical (BL)</p>
-				<img src="{DownIcon}" alt="" class:rotate="{showWork2}">
+				<img src={DownIcon} alt="" class:rotate={showWork2} />
 			</div>
-			<div class="work-drop" class:shown="{showWork2}">
-				<p>
-					Developed a web application for the SpazioDati platform,
-					which allows users to upload and share their data.
-				</p>
-				<p>
-					Worked on the frontend and backend of the application,
-					using the following technologies:
-				</p>
-				<ul>
-					<li>
-						<strong>Frontend:</strong> Vue.js, Svelte, HTML, CSS,
-						JS/TS
-					</li>
-					<li>
-						<strong>Backend:</strong> Node.js, Express, MongoDB,
-						GraphQL
-					</li>
-				</ul>
+			<div class="work-drop" class:shown={showWork2}>
+				<p><strong>Jul 2020 - Present</strong></p>
+				<p>Working on...</p>
 			</div>
 		</div>
 		<div class="tab">
 			<h3>Studies.</h3>
-			<div class="study" on:click="{() => showStudy1 = !showStudy1}">
-				<p class="tab-item-title">Bachelor @ University of Trento (TN)</p>
-				<img src="{DownIcon}" alt="" class:rotate="{showStudy1}">
-			</div>
-			<div class="study-drop" class:shown="{showStudy1}">
-				<p>
-					Developed a web application for the SpazioDati platform,
-					which allows users to upload and share their data.
+			<div class="study" on:click={() => (showStudy1 = !showStudy1)}>
+				<p class="tab-item-title">
+					Bachelor @ University of Trento (TN)
 				</p>
-				<p>
-					Worked on the frontend and backend of the application,
-					using the following technologies:
-				</p>
-				<ul>
-					<li>
-						<strong>Frontend:</strong> Vue.js, Svelte, HTML, CSS,
-						JS/TS
-					</li>
-					<li>
-						<strong>Backend:</strong> Node.js, Express, MongoDB,
-						GraphQL
-					</li>
-				</ul>
+				<img src={DownIcon} alt="" class:rotate={showStudy1} />
 			</div>
-			<div class="study" on:click="{() => showStudy2 = !showStudy2}">
+			<div class="study-drop" class:shown={showStudy1}>
+				<p><strong>Sep 2018 - Jul 2021</strong></p>
+				<p><strong>Grade: 110 cum laude</strong></p>
+				<p>Worked on ...</p>
+			</div>
+			<div class="study" on:click={() => (showStudy2 = !showStudy2)}>
 				<p class="tab-item-title">Master @ University of Trento (TN)</p>
-				<img src="{DownIcon}" alt="" class:rotate="{showStudy2}">
+				<img src={DownIcon} alt="" class:rotate={showStudy2} />
 			</div>
-			<div class="study-drop" class:shown="{showStudy2}">
-				<p>
-					Developed a web application for the SpazioDati platform,
-					which allows users to upload and share their data.
-				</p>
-				<p>
-					Worked on the frontend and backend of the application,
-					using the following technologies:
-				</p>
-				<ul>
-					<li>
-						<strong>Frontend:</strong> Vue.js, Svelte, HTML, CSS,
-						JS/TS
-					</li>
-					<li>
-						<strong>Backend:</strong> Node.js, Express, MongoDB,
-						GraphQL
-					</li>
-				</ul>
+			<div class="study-drop" class:shown={showStudy2}>
+				<p><strong>Sep 2021 - ???</strong></p>
+				<p><strong>Grade: ???</strong></p>
+				<p>Worked on ...</p>
 			</div>
 		</div>
 	</div>
@@ -253,7 +211,7 @@
 	.work-studies {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		gap: 7%;
 	}
@@ -264,7 +222,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: .5rem;
+		gap: 0.5rem;
 	}
 
 	.tab h3 {
@@ -274,10 +232,11 @@
 		letter-spacing: 1px;
 		font-size: 26px;
 		margin: 0;
-		padding: 0 0 .8rem 0;
+		padding: 0 0 0.8rem 0;
 	}
 
-	.work, .study {
+	.work,
+	.study {
 		color: black;
 		background-color: var(--primary-color-dark);
 		transition: background-color 0.2s ease-in-out;
@@ -306,7 +265,8 @@
 		background-color: var(--secondary-color-bright);
 	}
 
-	.work-drop, .study-drop {
+	.work-drop,
+	.study-drop {
 		width: 450px;
 		background-color: #430d7962;
 		padding: 0px 15px;
@@ -321,18 +281,21 @@
 		background-color: #00489b62;
 	}
 
-	.work-drop.shown, .study-drop.shown {
+	.work-drop.shown,
+	.study-drop.shown {
 		max-height: 500px;
 		transition: max-height 0.4s ease-in;
 	}
 
-	.work img, .study img {
+	.work img,
+	.study img {
 		max-width: 20px;
 		max-height: 20px;
 		transition: transform 0.2s ease-in;
 	}
 
-	.work img.rotate, .study img.rotate {
+	.work img.rotate,
+	.study img.rotate {
 		transform: rotate(·180deg);
 		-webkit-transform: rotate(-180deg);
 	}
