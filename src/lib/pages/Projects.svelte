@@ -6,6 +6,7 @@
 
 	import PrimaryButton from "../components/PrimaryButton.svelte";
 	import SecondaryButton from "../components/SecondaryButton.svelte";
+	import SectionTitle from "../components/SectionTitle.svelte";
 
 	import ICPImage from "../../assets/icp.png";
 	import UDAImage from "../../assets/uda.png";
@@ -14,14 +15,13 @@
 </script>
 
 <div class="projects" id="projects">
-    <div class="title-container" data-aos="fade-up">
-		<h1 class="title-num">03.</h1>
-		<h2 class="title">projects</h2>
+	<div data-aos="fade-up">
+		<SectionTitle titleNum="03." title="projects" />
 	</div>
 	<div class="project" data-aos="fade-up" data-aos-delay="100">
 		<img
             src="{ICPImage}"
-            alt="Myself"
+            alt="Interactive Code Playgrounds project"
         />
 		<div class="project-main">
 			<h3 class="project-title">Interactive Code Playgrounds</h3>
@@ -63,14 +63,14 @@
 		</div>
 		<img
             src="{UDAImage}"
-            alt="Myself"
+            alt="Unsupervised Domain Adaptation Project"
         />
 	</div>
 
 	<div class="project" data-aos="fade-up" data-aos-delay="300">
 		<img
             src="{MLCImage}"
-            alt="Myself"
+            alt="Distributed Multilevel Cache Project"
         />
 		<div class="project-main">
 			<h3 class="project-title">Distributed Multi-level cache</h3>
@@ -111,7 +111,7 @@
 		</div>
 		<img
             src="{PEGImage}"
-            alt="Myself"
+            alt="Pursuer-evader game project"
         />
 	</div>
 </div>
@@ -125,29 +125,6 @@
 		justify-content: center;
 		align-items: center;
 		margin-top: 300px;
-	}
-
-	.title-container {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 2rem;
-	}
-
-	.title-num {
-		display: inline;
-		font-weight: 100;
-		font-size: 45px;
-		margin: 0;
-		padding: 0;
-		color: var(--primary-color);
-	}
-
-	.title {
-		font-weight: 100;
-		display: inline;
-		font-size: 30px;
-		margin: 0;
-		padding: 0;
 	}
 
 	.project {

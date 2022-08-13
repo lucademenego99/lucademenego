@@ -1,10 +1,11 @@
+<script lang="ts">
+	import SectionTitle from "../components/SectionTitle.svelte";
+</script>
+
 <div class="about-me" id="about" data-aos="fade-up">
-    <div class="title-container">
-		<h1 class="title-num">01.</h1>
-		<h2 class="title">about me</h2>
-	</div>
+	<SectionTitle titleNum="01." title="about me" />
     <div class="row">
-		<p class="about">Hi, I'm Luca. I'm a 23 years old guy who lives in Laggio di Cadore. Never heard of it, eh? It's a small village amongst the Dolomites, quite little-known, but it has a lot to offer. I spent my childhood here, went to school, made some friends... the usual life you would expect. <br> I have always been fond of computers, I built my own one when I was a kid, and I started my coding journey during high-school as a self-taught Java Developer. Then I finally went to the University of Trento, bachelor's degree in Computer Science. The path has actually been quite straightforward, and in no time I found a job, I graduated and I started the Master's degree. <br> And here we are. One year's left, the first went pretty well, I'm on vacation and I'm celebrating by creating this Portfolio. Maybe I should take advantage of this period to take a break, but I'm having fun :)</p>
+		<p class="about">Hi, I'm Luca. I'm a 23 years old guy who lives in Laggio di Cadore. Never heard of it? It's a small village amongst the Dolomites in Italy, quite little-known, but it has a lot to offer. I spent my childhood here, went to school, made some friends... the usual life you would expect. <br> I have always been fond of computers, I built my own one when I was a kid, and I started my coding journey during high-school as a self-taught Java Developer. Then I finally went to the University of Trento, bachelor's degree in Computer Science. The path has actually been quite straightforward, and in no time I found a job, I graduated and I started the Master's degree. <br> And here we are. One year's left, the first went pretty well, I'm on vacation and I'm celebrating by creating this Portfolio. Maybe I should take advantage of this period to take a break, but I'm having fun :)</p>
         <img
             src="https://picsum.photos/500/500"
             alt="Myself"
@@ -20,29 +21,6 @@
 		justify-content: center;
 		align-items: center;
 		margin-top: 300px;
-	}
-
-	.title-container {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 2rem;
-	}
-
-	.title-num {
-		display: inline;
-		font-weight: 100;
-		font-size: 45px;
-		margin: 0;
-		padding: 0;
-		color: var(--primary-color);
-	}
-
-	.title {
-		font-weight: 100;
-		display: inline;
-		font-size: 30px;
-		margin: 0;
-		padding: 0;
 	}
 
     .row {

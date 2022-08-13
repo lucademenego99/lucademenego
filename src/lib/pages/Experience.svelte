@@ -1,8 +1,11 @@
 <script lang="ts">
-	import GoIcon from "../../assets/go-2.svg";
-	import VueIcon from "../../assets/vue-2.svg";
-	import FlutterIcon from "../../assets/flutter-2.svg";
+	import GoIcon from "../../assets/go.svg";
+	import VueIcon from "../../assets/vuejs.svg";
+	import FlutterIcon from "../../assets/flutter.svg";
 	import DownIcon from "../../assets/down-arrow.svg";
+
+	import SectionTitle from "../components/SectionTitle.svelte";
+	import Card from "../components/Card.svelte";
 
 	let showWork1 = false;
 	let showWork2 = false;
@@ -11,51 +14,34 @@
 </script>
 
 <div class="experience" id="experience">
-	<div class="title-container" data-aos="fade-up">
-		<h1 class="title-num">02.</h1>
-		<h2 class="title">experience</h2>
+	<div data-aos="fade-up">
+		<SectionTitle titleNum="02." title="experience" />
 	</div>
 	<div class="expertise" data-aos="fade-right" data-aos-delay="200">
-		<div class="card">
-			<div class="card-title">
-				<h3>Software Development</h3>
-				<img src={GoIcon} alt="" />
-			</div>
-			<div class="card-description">
-				<p>
-					Worked on different projects based on OOP - C#, Go, Python,
-					Node.js. Developed RESTful APIs, remote procedure calls
-					based on gRPC and microservices architectures.
-				</p>
-			</div>
-		</div>
-		<div class="card">
-			<div class="card-title">
-				<h3>Frontend</h3>
-				<img src={VueIcon} alt="" />
-			</div>
-			<div class="card-description">
-				<p>
-					Competent in basic HTML, CSS, JS/TS, as well as web
-					frameworks like Vue.js, Svelte and Yii2. Implemented 3D web
-					applications using Three.js, created npm modules exported as
-					web components.
-				</p>
-			</div>
-		</div>
-		<div class="card">
-			<div class="card-title">
-				<h3>Mobile Applications</h3>
-				<img src={FlutterIcon} alt="" />
-			</div>
-			<div class="card-description">
-				<p>
-					Developed various Flutter applications for both iOS and
-					Android. Worked with ARKit and ARCore Flutter plugins, while
-					extending them with new features.
-				</p>
-			</div>
-		</div>
+		<Card
+			title="Software Development"
+			icon={GoIcon}
+			description="Worked on different projects based on OOP - C#, Go, Python,
+		Node.js. Developed RESTful APIs, remote procedure calls
+		based on gRPC and microservices architectures."
+		/>
+
+		<Card
+			title="Frontend"
+			icon={VueIcon}
+			description="Competent in basic HTML, CSS, JS/TS, as well as web
+			frameworks like Vue.js, Svelte and Yii2. Implemented 3D web
+			applications using Three.js, created npm modules exported as
+			web components."
+		/>
+		
+		<Card
+			title="Mobile Applications"
+			icon={FlutterIcon}
+			description="Developed various Flutter applications for both iOS and
+			Android. Worked with ARKit and ARCore Flutter plugins, while
+			extending them with new features."
+		/>
 	</div>
 	<div class="work-studies">
 		<div class="tab" data-aos="fade-up" data-aos-delay="350">
@@ -177,84 +163,12 @@
 		margin-top: 300px;
 	}
 
-	.title-container {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 2rem;
-	}
-
-	.title-num {
-		display: inline;
-		font-weight: 100;
-		font-size: 45px;
-		margin: 0;
-		padding: 0;
-		color: var(--primary-color);
-	}
-
-	.title {
-		font-weight: 100;
-		display: inline;
-		font-size: 30px;
-		margin: 0;
-		padding: 0;
-	}
-
 	.expertise {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		gap: 5%;
 		margin-bottom: 7rem;
-	}
-
-	.card {
-		width: 300px;
-		min-height: 200px;
-		background-color: transparent;
-		border: 2px solid white;
-		border-radius: 14px;
-		display: flex;
-		flex-direction: column;
-		padding: 20px;
-		transition: all 0.2s ease-in-out;
-	}
-
-	.card:hover {
-		border-radius: 0px;
-		background-color: var(--primary-color-less-alpha);
-	}
-
-	.card-title {
-		display: flex;
-		padding: 20px 0px;
-		width: 100%;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-		gap: 10px;
-	}
-
-	.card-title h3 {
-		width: 50%;
-		font-family: "K2D Bold";
-		color: white;
-		letter-spacing: 1px;
-		font-weight: bold;
-		font-size: 20px;
-		margin: 0;
-		padding: 0;
-	}
-
-	img {
-		object-fit: contain;
-		max-width: 64px;
-		max-height: 64px;
-	}
-
-	.card-description {
-		letter-spacing: 1px;
-		width: 100%;
 	}
 
 	.work-studies {

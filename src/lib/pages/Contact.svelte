@@ -4,15 +4,15 @@
 
 	import PrimaryButton from "../components/PrimaryButton.svelte";
 	import SecondaryButton from "../components/SecondaryButton.svelte";
+	import SectionTitle from "../components/SectionTitle.svelte";
 
 	import ParticlesCanvas from "../components/ParticlesCanvas.svelte";
 </script>
 
 <div class="contact" id="contact">
 	<ParticlesCanvas />
-	<div class="title-container" data-aos="fade-up" data-aos-delay="100">
-		<h1 class="title-num">04.</h1>
-		<h2 class="title">contact</h2>
+	<div data-aos="fade-up" data-aos-delay="100">
+		<SectionTitle titleNum="04." title="contact" />
 	</div>
 	<div class="main" data-aos="fade-up" data-aos-delay="150">
 		<div class="question">
@@ -40,29 +40,6 @@
 		justify-content: center;
 		align-items: center;
 		padding: 300px 0;
-	}
-
-	.title-container {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 2rem;
-	}
-
-	.title-num {
-		display: inline;
-		font-weight: 100;
-		font-size: 45px;
-		margin: 0;
-		padding: 0;
-		color: var(--primary-color);
-	}
-
-	.title {
-		font-weight: 100;
-		display: inline;
-		font-size: 30px;
-		margin: 0;
-		padding: 0;
 	}
 
 	.main {
