@@ -69,13 +69,18 @@
 				<p>
 					Developed a notification centre based on gRPC and Protocol
 					Buffers, which was used to send notifications to users while
-					exploiting Firebase Cloud Messaging.
+					exploiting Firebase Cloud Messaging and a serverless
+					architecture. AWS DynamoDB has been the chosen backend
+					database.
 				</p>
-				<p>Integrated the system with:</p>
+				<p>
+					Software monitoring has been integrated via OpenTelemetry,
+					based on:
+				</p>
 				<ul>
-					<li>logs - using sentry</li>
-					<li>metrics</li>
-					<li>distributed tracing</li>
+					<li>logs - exported in sentry</li>
+					<li>metrics - exported in Prometheus</li>
+					<li>distributed tracing - exported in AWS X-Ray</li>
 				</ul>
 				<p>
 					Incorporated it in the production site based on Django and
@@ -88,7 +93,24 @@
 			</div>
 			<div class="work-drop" class:shown={showWork2}>
 				<p><strong>Jul 2020 - Present</strong></p>
-				<p>Working on...</p>
+				<p>At Thema I am mostly working on the development of:</p>
+				<ul>
+					<li>Flutter applications for iOS and Android</li>
+					<li>web applications, in Vue.js and Yii2</li>
+				</ul>
+				<p>
+					In both cases, an important aspect is virtual reality and
+					3D: I have been working quite a lot with ARKit, ARCore and
+					Three.js.
+				</p>
+				<p>
+					Regarding the backend, it is primarily based on C#, which is
+					also used to develop SAP add-ons and Windows Forms.
+				</p>
+				<p>
+					During these years I also gained some experience in the
+					Google Cloud Platform and its main components.
+				</p>
 			</div>
 		</div>
 		<div class="tab" data-aos="fade-up" data-aos-delay="400">
@@ -102,7 +124,18 @@
 			<div class="study-drop" class:shown={showStudy1}>
 				<p><strong>Sep 2018 - Jul 2021</strong></p>
 				<p><strong>Grade: 110 cum laude</strong></p>
-				<p>Worked on ...</p>
+				<p>
+					These three years have given me an overall knowledge of the
+					most important aspects of computer science, together with a
+					preparation on mathematics, physics and statistics.
+				</p>
+				<p>
+					I have been introduced to how calculators and operating
+					systems work, to different fields, such as computer and
+					network security, human-computer interaction and machine
+					learning. More focus has been put to algorithms, data
+					structures, software engineering and databases.
+				</p>
 			</div>
 			<div class="study" on:click={() => (showStudy2 = !showStudy2)}>
 				<p class="tab-item-title">Master @ University of Trento (TN)</p>
@@ -111,7 +144,23 @@
 			<div class="study-drop" class:shown={showStudy2}>
 				<p><strong>Sep 2021 - ???</strong></p>
 				<p><strong>Grade: ???</strong></p>
-				<p>Worked on ...</p>
+				<p>
+					The master allowed me to go deeper into the aspects of
+					computer science I personally found more interesting, namely
+					Machine/Deep Learning, Service design and engineering and
+					Network Security.
+				</p>
+				<p>
+					It gave me a better understanding on how complex
+					architectures can scale up, even in a cloud computing and
+					distributed setting. Finally, computability and
+					computational complexity have been described in more detail,
+					with a great focus on NP-complete problems.
+				</p>
+				<p>
+					Thanks to various projects and courses, I have also gained
+					some experience in web architectures.
+				</p>
 			</div>
 		</div>
 	</div>

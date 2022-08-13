@@ -7,9 +7,9 @@
 <div class="footer">
     <p>Luca De Menego, ©2022</p>
     <div class="social">
-        <img src="{LinkedinIcon}" alt="">
-        <img src="{GithubIcon}" alt="">
-        <img src="{InstagramIcon}" alt="">
+        <a href="https://it.linkedin.com/in/luca-de-menego-7a3085229" target="_blank"><img src="{LinkedinIcon}" alt="Linkedin Link"></a>
+        <a href="https://github.com/lucademenego99" target="_blank"><img src="{GithubIcon}" alt="Github link"></a>
+        <a href="https://www.instagram.com/lucademe_99/" target="_blank"><img src="{InstagramIcon}" alt="Instagram link"></a>
     </div>
 </div>
 
@@ -21,6 +21,10 @@
         justify-content: center;
         font-family: "K2D Thin Regular";
         color: white;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .social {

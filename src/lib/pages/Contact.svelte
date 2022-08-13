@@ -1,14 +1,16 @@
 <script lang="ts">
 	import MailIcon from "../../assets/mail.svg";
+	import Resume from "../../assets/Resume.pdf";
 
 	import PrimaryButton from "../components/PrimaryButton.svelte";
 	import SecondaryButton from "../components/SecondaryButton.svelte";
 
-	import Resume from "../../assets/Resume.pdf";
+	import ParticlesCanvas from "../components/ParticlesCanvas.svelte";
 </script>
 
 <div class="contact" id="contact">
-    <div class="title-container" data-aos="fade-up" data-aos-delay="100">
+	<ParticlesCanvas />
+	<div class="title-container" data-aos="fade-up" data-aos-delay="100">
 		<h1 class="title-num">04.</h1>
 		<h2 class="title">contact</h2>
 	</div>
@@ -17,22 +19,27 @@
 			<p>Have a question or want to work together?</p>
 		</div>
 		<div class="buttons-container">
-			<PrimaryButton text="Say hi!" icon="{MailIcon}" link="mailto:lucademenego99@gmail.com" />
-			<div class="divider"></div>
-			<SecondaryButton text="Check my Resume" icon="" link="{Resume}" />
+			<PrimaryButton
+				text="Say hi!"
+				icon={MailIcon}
+				link="mailto:lucademenego99@gmail.com"
+			/>
+			<div class="divider" />
+			<SecondaryButton text="Check my Resume" icon="" link={Resume} />
 		</div>
 	</div>
 </div>
 
 <style>
-    .contact {
+	.contact {
 		font-family: "Jockey-One";
 		color: var(--secondary-text-color);
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 300px 0;
+		padding: 300px 0;
 	}
 
 	.title-container {
