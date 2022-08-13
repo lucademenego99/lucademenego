@@ -1,14 +1,21 @@
 <script lang="ts">
     export let text;
     export let icon;
+    export let link;
 </script>
 
-<div class="primary-button">
-    {text}
-    <img src={icon} alt="" />
-</div>
+<a href="{link}" target="_blank">
+    <div class="primary-button">
+        {text}
+        <img src={icon} alt="" />
+    </div>
+</a>
 
 <style>
+    a {
+        text-decoration: none;
+    }
+
     .primary-button {
         min-width: 200px;
         cursor: pointer;

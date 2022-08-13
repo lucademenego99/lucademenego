@@ -3,6 +3,8 @@
 
 	import PrimaryButton from "../components/PrimaryButton.svelte";
 	import SecondaryButton from "../components/SecondaryButton.svelte";
+
+	import Resume from "../../assets/Resume.pdf";
 </script>
 
 <div class="contact" id="contact">
@@ -15,9 +17,9 @@
 			<p>Have a question or want to work together?</p>
 		</div>
 		<div class="buttons-container">
-			<PrimaryButton text="Say hi!" icon="{MailIcon}" />
+			<PrimaryButton text="Say hi!" icon="{MailIcon}" link="mailto:lucademenego99@gmail.com" />
 			<div class="divider"></div>
-			<SecondaryButton text="Check my Resume" icon="" />
+			<SecondaryButton text="Check my Resume" icon="" link="{Resume}" />
 		</div>
 	</div>
 </div>

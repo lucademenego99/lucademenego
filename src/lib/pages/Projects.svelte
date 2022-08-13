@@ -6,6 +6,11 @@
 
 	import PrimaryButton from "../components/PrimaryButton.svelte";
 	import SecondaryButton from "../components/SecondaryButton.svelte";
+
+	import ICPImage from "../../assets/icp.png";
+	import UDAImage from "../../assets/uda.png";
+	import MLCImage from "../../assets/mlc.png";
+	import PEGImage from "../../assets/peg.png";
 </script>
 
 <div class="projects" id="projects">
@@ -15,7 +20,7 @@
 	</div>
 	<div class="project" data-aos="fade-up" data-aos-delay="100">
 		<img
-            src="https://picsum.photos/500/300"
+            src="{ICPImage}"
             alt="Myself"
         />
 		<div class="project-main">
@@ -24,8 +29,8 @@
 				<p>A front-end web technology that integrates executable code in HTML slideshows.  This incremental evolution of traditional slideshows aims to reduce friction in learning to code, and enables more scaffolded and active teaching.</p>
 			</div>
 			<div class="buttons">
-				<PrimaryButton text="View it on Github" icon="{GithubIcon}" />
-				<SecondaryButton text="Tiddlywiki" icon="{TiddlywikiIcon}" />
+				<PrimaryButton text="View it on Github" icon="{GithubIcon}" link="https://github.com/lucademenego99/icp-bundle" />
+				<SecondaryButton text="Tiddlywiki" icon="{TiddlywikiIcon}" link="https://lucademenego99.github.io/icp-tiddlywiki/" />
 			</div>
 		</div>
 		<div class="keywords">
@@ -52,19 +57,19 @@
 				<p>Collection of methods concerning unsupervised domain adaptation techniques, namely: Deep Domain Confusion, Domain Adversarial NN, Domain Separation Networks, Entropy Minimization vs. Diversity Maximization.</p>
 			</div>
 			<div class="buttons">
-				<PrimaryButton text="View it on Github" icon="{GithubIcon}" />
-				<SecondaryButton text="Notebook" icon="{JupyterIcon}" />
+				<PrimaryButton text="View it on Github" icon="{GithubIcon}" link="https://github.com/lucademenego99/uda" />
+				<SecondaryButton text="Notebook" icon="{JupyterIcon}" link="https://github.com/lucademenego99/uda/blob/master/uda/notebook/notebook.ipynb" />
 			</div>
 		</div>
 		<img
-            src="https://picsum.photos/500/300"
+            src="{UDAImage}"
             alt="Myself"
         />
 	</div>
 
 	<div class="project" data-aos="fade-up" data-aos-delay="300">
 		<img
-            src="https://picsum.photos/500/300"
+            src="{MLCImage}"
             alt="Myself"
         />
 		<div class="project-main">
@@ -73,8 +78,8 @@
 				<p>Implementation of a distributed architecture consisting of multiple caches, guaranteeing client-centric consistency in an environment in which caches may fail by crashing.</p>
 			</div>
 			<div class="buttons">
-				<PrimaryButton text="View it on Github" icon="{GithubIcon}" />
-				<SecondaryButton text="Paper" icon="{DocumentIcon}" />
+				<PrimaryButton text="View it on Github" icon="{GithubIcon}" link="https://github.com/lucademenego99/multilevel-cache" />
+				<SecondaryButton text="Report" icon="{DocumentIcon}" link="https://github.com/lucademenego99/multilevel-cache/blob/master/doc/Report.pdf" />
 			</div>
 		</div>
 		<div class="keywords">
@@ -100,12 +105,12 @@
 				<p>This project contains a set of devised algorithms allowing to find collision-free Dubins shortest paths for a robot moving in an environment filled with obstacles. Finally, two robots compete between each other in an evader-pursuer game.</p>
 			</div>
 			<div class="buttons">
-				<PrimaryButton text="View it on Github" icon="{GithubIcon}" />
-				<SecondaryButton text="Paper" icon="{DocumentIcon}" />
+				<PrimaryButton text="View it on Github" icon="{GithubIcon}" link="https://github.com/lucademenego99/AppliedRoboticsStudentInterface" />
+				<SecondaryButton text="Report" icon="{DocumentIcon}" link="https://github.com/lucademenego99/AppliedRoboticsStudentInterface/blob/master/Paper.pdf" />
 			</div>
 		</div>
 		<img
-            src="https://picsum.photos/500/300"
+            src="{PEGImage}"
             alt="Myself"
         />
 	</div>
@@ -151,6 +156,11 @@
 		flex-direction: row;
 		align-items: center;
 		margin: 1rem 0 6rem 0;
+	}
+
+	.project img {
+		max-width: 600px;
+		max-height: 600px;
 	}
 
 	.project.flipped {

@@ -1,16 +1,23 @@
 <script lang="ts">
     export let text;
     export let icon;
+	export let link;
 </script>
 
-<div class="secondary-button">
-    {text}
-    {#if icon != ""}
-        <img src={icon} alt="" />
-    {/if}
-</div>
+<a href="{link}" target="_blank">
+	<div class="secondary-button">
+		{text}
+		{#if icon != ""}
+			<img src={icon} alt="" />
+		{/if}
+	</div>
+</a>
 
 <style>
+	a {
+		text-decoration: none;
+	}
+
     .secondary-button {
         min-width: 150px;
 		cursor: pointer;
