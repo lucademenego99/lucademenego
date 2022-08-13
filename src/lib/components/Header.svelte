@@ -1,25 +1,22 @@
 <header>
     <nav>
-        <!-- <div class="resume">
-            <a href="/resume.pdf">Resume</a>
-        </div> -->
         <div class="nav">
             <ol>
-                <li>
+                <li data-aos="fade" data-aos-delay="300">
                     <a href="#about">about me</a>
                 </li>
-                <li>
+                <li data-aos="fade" data-aos-delay="350">
                     <a href="#experience">experience</a>
                 </li>
-                <li>
+                <li data-aos="fade" data-aos-delay="400">
                     <a href="#projects">projects</a>
                 </li>
-                <li>
+                <li data-aos="fade" data-aos-delay="450">
                     <a href="#contact">contact</a>
                 </li>
             </ol>
         </div>
-		<div class="divider"></div>
+		<div class="divider" data-aos="fade" data-aos-delay="450"></div>
     </nav>
 </header>
 

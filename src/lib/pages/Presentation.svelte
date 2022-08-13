@@ -4,10 +4,10 @@
 
 <div class="presentation">
 	<div class="text-title">
-		<h1>Luca De Menego</h1>
-		<p>Backend, Frontend, App Developer</p>
+		<h1 data-aos="fade" data-aos-delay="550">Luca De Menego</h1>
+		<p data-aos="fade" data-aos-delay="600">Backend, Frontend, App Developer</p>
 	</div>
-	<a href="#about" class="down-icon"><img src={DownArrowIcon} alt="Go Down" /></a>
+	<a href="#about" class="about-arrow"><img src={DownArrowIcon} alt="Go Down" class="down-icon" /></a>
 </div>
 
 <style>
@@ -45,7 +45,7 @@
 		margin: 0;
 	}
 
-	.down-icon {
+	.about-arrow {
 		position: relative;
 		top: calc(50% - (var(--header-height) / 2));
 		transition: transform 0.2s ease-in-out;

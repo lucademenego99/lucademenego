@@ -11,11 +11,11 @@
 </script>
 
 <div class="experience" id="experience">
-	<div class="title-container">
+	<div class="title-container" data-aos="fade-up">
 		<h1 class="title-num">02.</h1>
 		<h2 class="title">experience</h2>
 	</div>
-	<div class="expertise">
+	<div class="expertise" data-aos="fade-right" data-aos-delay="200">
 		<div class="card">
 			<div class="card-title">
 				<h3>Software Development</h3>
@@ -58,7 +58,7 @@
 		</div>
 	</div>
 	<div class="work-studies">
-		<div class="tab">
+		<div class="tab" data-aos="fade-up" data-aos-delay="350">
 			<h3>Work.</h3>
 			<div class="work" on:click={() => (showWork1 = !showWork1)}>
 				<p class="tab-item-title">Internship @ SpazioDati (TN)</p>
@@ -91,7 +91,7 @@
 				<p>Working on...</p>
 			</div>
 		</div>
-		<div class="tab">
+		<div class="tab" data-aos="fade-up" data-aos-delay="400">
 			<h3>Studies.</h3>
 			<div class="study" on:click={() => (showStudy1 = !showStudy1)}>
 				<p class="tab-item-title">

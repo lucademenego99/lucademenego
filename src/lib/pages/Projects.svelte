@@ -9,11 +9,11 @@
 </script>
 
 <div class="projects" id="projects">
-    <div class="title-container">
+    <div class="title-container" data-aos="fade-up">
 		<h1 class="title-num">03.</h1>
 		<h2 class="title">projects</h2>
 	</div>
-	<div class="project">
+	<div class="project" data-aos="fade-up" data-aos-delay="100">
 		<img
             src="https://picsum.photos/500/300"
             alt="Myself"
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 
-	<div class="project flipped">
+	<div class="project flipped" data-aos="fade-up" data-aos-delay="200">
 		<div class="keywords">
 			<ul class="flipped">
 				<li>Python</li>
@@ -62,7 +62,7 @@
         />
 	</div>
 
-	<div class="project">
+	<div class="project" data-aos="fade-up" data-aos-delay="300">
 		<img
             src="https://picsum.photos/500/300"
             alt="Myself"
@@ -86,7 +86,7 @@
 		</div>
 	</div>
 
-	<div class="project flipped">
+	<div class="project flipped" data-aos="fade-up" data-aos-delay="400">
 		<div class="keywords">
 			<ul class="flipped">
 				<li>C++</li>

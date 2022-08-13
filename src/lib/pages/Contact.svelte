@@ -6,11 +6,11 @@
 </script>
 
 <div class="contact" id="contact">
-    <div class="title-container">
+    <div class="title-container" data-aos="fade-up" data-aos-delay="100">
 		<h1 class="title-num">04.</h1>
 		<h2 class="title">contact</h2>
 	</div>
-	<div class="main">
+	<div class="main" data-aos="fade-up" data-aos-delay="150">
 		<div class="question">
 			<p>Have a question or want to work together?</p>
 		</div>

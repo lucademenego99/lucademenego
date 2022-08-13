@@ -1,4 +1,4 @@
-<div class="about-me" id="about">
+<div class="about-me" id="about" data-aos="fade-up">
     <div class="title-container">
 		<h1 class="title-num">01.</h1>
 		<h2 class="title">about me</h2>

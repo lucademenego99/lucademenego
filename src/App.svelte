@@ -1,6 +1,5 @@
 <script lang="ts">
   import Header from "./lib/components/Header.svelte";
-  import Aside from "./lib/components/Aside.svelte";
   import Footer from "./lib/components/Footer.svelte";
   import Section from "./lib/components/Section.svelte";
   import Presentation from "./lib/pages/Presentation.svelte";
@@ -8,6 +7,12 @@
   import Experience from "./lib/pages/Experience.svelte";
   import Projects from "./lib/pages/Projects.svelte";
   import Contact from "./lib/pages/Contact.svelte";
+
+  import AOS from "aos";
+
+  AOS.init({
+    once: true
+  });
 </script>
 
 <div class="app">
