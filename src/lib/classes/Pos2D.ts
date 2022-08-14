@@ -1,3 +1,7 @@
+/**
+ * Pos2D Class
+ * Used to store a 2D position
+ */
 export class Pos2D {
     x: number | undefined;
     y: number | undefined;

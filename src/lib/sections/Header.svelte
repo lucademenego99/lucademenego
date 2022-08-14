@@ -1,3 +1,5 @@
+<!-- Header of the page -->
+
 <header>
     <nav>
         <div class="nav">
@@ -76,13 +78,6 @@
 		content: "0" counter(item) ".";
 		padding-right: 5px;
 		color: var(--primary-color);
-	}
-
-	nav .resume {
-		cursor: pointer;
-		padding: 10px;
-		border: 2px solid var(--primary-color);
-		border-radius: 6px;
 	}
 
 	nav .resume a {

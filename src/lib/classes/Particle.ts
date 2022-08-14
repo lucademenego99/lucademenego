@@ -1,6 +1,12 @@
 import type { Mouse } from "../Mouse";
 import { Pos2D } from "./Pos2D";
 
+/**
+ * Particle Class
+ * It represents a particle contained in the Canvas component.
+ * It has a position, a velocity and a radius.
+ * It moves and bounces against the walls of the canvas.
+ */
 export class Particle {
     x: number;
     y: number;
@@ -26,25 +32,6 @@ export class Particle {
         if (this.y + this.radius > canvasHeight || this.y - this.radius < 0) {
             this.vy = -this.vy;
         }
-
-        // Check if the particle collides with the mouse
-        // const dx = mouse.x - this.x;
-        // const dy = mouse.y - this.y;
-        // const distance = Math.sqrt(dx * dx + dy * dy);
-        // if (distance  < mouse.radius + this.radius) {
-        //     if (mouse.x < this.x && this.x < canvasWidth - (this.radius + 10)) {
-        //         this.x += 10;
-        //     }
-        //     if (mouse.x > this.x && this.x > this.radius + 10) {
-        //         this.x -= 10;
-        //     }
-        //     if (mouse.y < this.y && this.y < canvasHeight - (this.radius + 10)) {
-        //         this.y += 10;
-        //     }
-        //     if (mouse.y > this.y && this.y > this.radius + 10) {
-        //         this.y -= 10;
-        //     }
-        // }
 
         // Update the position
         this.x += this.vx;

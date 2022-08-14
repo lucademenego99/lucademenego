@@ -1,3 +1,5 @@
+<!-- Parent of any section of the webpage -->
+
 <script lang="ts">
     import { onMount } from 'svelte';
     
@@ -19,6 +21,5 @@
 <style>
     .section {
 		position: relative;
-        /* padding-bottom: 10%; */
 	}
 </style>

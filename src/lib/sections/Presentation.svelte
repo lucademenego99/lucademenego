@@ -3,10 +3,12 @@
 </script>
 
 <div class="presentation">
+	<!-- Title -->
 	<div class="text-title">
 		<h1 data-aos="fade" data-aos-delay="550">Luca De Menego</h1>
 		<p data-aos="fade" data-aos-delay="600">Backend, Frontend, App Developer</p>
 	</div>
+	<!-- Scroll down arrow -->
 	<a href="#about" class="about-arrow"><img src={DownArrowIcon} alt="Go Down" class="down-icon" /></a>
 </div>
 
@@ -54,6 +56,9 @@
 		animation: arrow-anim 1.5s infinite;
 	}
 
+	/**
+		Drop-down arrow animation keyframes
+	*/
 	@-webkit-keyframes arrow-anim {
 		0% {
 			-webkit-transform: translate(0, 0);

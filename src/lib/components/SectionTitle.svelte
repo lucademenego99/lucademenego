@@ -1,3 +1,5 @@
+<!-- Title of every section of the site, having a number and the actual title -->
+
 <script lang="ts">
     export let titleNum;
     export let title;

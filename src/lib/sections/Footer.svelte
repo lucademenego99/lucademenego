@@ -1,3 +1,5 @@
+<!-- Footer of the page -->
+
 <script lang="ts">
     import LinkedinIcon from '../../assets/linkedin.svg';
     import GithubIcon from '../../assets/github-2.svg';

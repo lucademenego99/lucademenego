@@ -1,3 +1,5 @@
+<!-- Primary Button, containing a text, an icon and a link -->
+
 <script lang="ts">
     export let text;
     export let icon;

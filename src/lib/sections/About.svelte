@@ -3,7 +3,10 @@
 </script>
 
 <div class="about-me" id="about" data-aos="fade-up">
+	<!-- Title -->
 	<SectionTitle titleNum="01." title="about me" />
+	
+	<!-- About me text and image -->
     <div class="row">
 		<p class="about">Hi, I'm Luca. I'm a 23 years old guy who lives in Laggio di Cadore. Never heard of it? It's a small village amongst the Dolomites in Italy, quite little-known, but it has a lot to offer. I spent my childhood here, went to school, made some friends... the usual life you would expect. <br> I have always been fond of computers, I built my own one when I was a kid, and I started my coding journey during high-school as a self-taught Java Developer. Then I finally went to the University of Trento, bachelor's degree in Computer Science. The path has actually been quite straightforward, and in no time I found a job, I graduated and I started the Master's degree. <br> And here we are. One year's left, the first went pretty well, I'm on vacation and I'm celebrating by creating this Portfolio. Maybe I should take advantage of this period to take a break, but I'm having fun :)</p>
         <img

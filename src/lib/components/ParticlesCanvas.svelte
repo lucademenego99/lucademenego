@@ -1,3 +1,5 @@
+<!-- Canvas showing a set of particles interacting between each others via lines -->
+
 <script lang="ts">
     import { onMount } from "svelte";
     import type { Mouse } from "../Mouse";

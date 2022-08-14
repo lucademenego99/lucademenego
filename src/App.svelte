@@ -1,15 +1,16 @@
 <script lang="ts">
-  import Header from "./lib/components/Header.svelte";
-  import Footer from "./lib/components/Footer.svelte";
-  import Section from "./lib/components/Section.svelte";
-  import Presentation from "./lib/pages/Presentation.svelte";
-  import About from "./lib/pages/About.svelte";
-  import Experience from "./lib/pages/Experience.svelte";
-  import Projects from "./lib/pages/Projects.svelte";
-  import Contact from "./lib/pages/Contact.svelte";
+  import Header from "./lib/sections/Header.svelte";
+  import Footer from "./lib/sections/Footer.svelte";
+  import Section from "./lib/sections/Section.svelte";
+  import Presentation from "./lib/sections/Presentation.svelte";
+  import About from "./lib/sections/About.svelte";
+  import Experience from "./lib/sections/Experience.svelte";
+  import Projects from "./lib/sections/Projects.svelte";
+  import Contact from "./lib/sections/Contact.svelte";
 
   import AOS from "aos";
 
+  // Initialize Animate on Scroll package - all animations will be performed only once
   AOS.init({
     once: true
   });

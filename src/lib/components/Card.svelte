@@ -1,3 +1,5 @@
+<!-- Main Card - contains a title, an icon and a description -->
+
 <script lang="ts">
     export let title;
     export let icon;

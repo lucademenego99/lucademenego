@@ -10,10 +10,15 @@
 </script>
 
 <div class="contact" id="contact">
+	<!-- Background canvas with particles -->
 	<ParticlesCanvas />
+
+	<!-- Title -->
 	<div data-aos="fade-up" data-aos-delay="100">
 		<SectionTitle titleNum="04." title="contact" />
 	</div>
+
+	<!-- Contact form -->
 	<div class="main" data-aos="fade-up" data-aos-delay="150">
 		<div class="question">
 			<p>Have a question or want to work together?</p>
