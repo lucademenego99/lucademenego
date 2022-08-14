@@ -46,8 +46,15 @@
 	img {
 		filter: opacity(50%) blur(2px) drop-shadow(18px 18px 5px var(--primary-color));
 		transition: filter 0.2s ease-in-out;
+		max-width: 90vw;
 	}
 	img:hover {
 		filter: none;
+	}
+
+	@media (max-width: 1320px) {
+		.row {
+			flex-direction: column;
+		}
 	}
 </style>

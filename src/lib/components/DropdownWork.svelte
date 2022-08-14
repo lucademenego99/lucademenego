@@ -75,4 +75,22 @@
 		margin: 0;
 		padding: 10px 0px;
 	}
+
+	@media (max-width: 540px) {
+        .work {
+			width: 80%;
+			font-size: 3vw;
+			padding: 0.7vw 4vw;
+		}
+
+		.work-drop {
+			width: 80%;
+			font-size: 3vw;
+		}
+
+		.work img {
+			max-width: 3.6vw;
+			max-height: 3.6vw;
+		}
+    }
 </style>

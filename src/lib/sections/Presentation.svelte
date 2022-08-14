@@ -28,23 +28,27 @@
 
 	.text-title {
 		position: relative;
+		padding: 10%;
 	}
 
 	h1 {
 		font-weight: 100;
-		font-size: 130px;
+		font-size: 9.5vw;
 		margin: 0;
 		padding: 0;
+		line-height: 100%;
+		text-align: center;
 	}
 
 	p {
-		position: absolute;
 		letter-spacing: 4px;
-		bottom: -7px;
-		left: 6px;
-		font-size: 30px;
+		font-size: 1.7vw;
 		padding: 0;
 		margin: 0;
+		line-height: 100%;
+		text-align: left;
+		position: relative;
+		left: 5px;
 	}
 
 	.about-arrow {
@@ -79,6 +83,20 @@
 		}
 		40% {
 			transform: translate(0, 0);
+		}
+	}
+
+	@media (max-width: 980px) {
+		.text-title {
+			padding: 5%;
+		}
+
+		h1 {
+			font-size: 13vw;
+		}
+
+		p {
+			font-size: 3vw;
 		}
 	}
 </style>

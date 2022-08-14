@@ -83,4 +83,22 @@
 	.study {
 		background-color: var(--secondary-color);
 	}
+
+	@media (max-width: 540px) {
+        .study {
+			width: 80%;
+			font-size: 3vw;
+			padding: 0.7vw 4vw;
+		}
+
+		.study-drop {
+			width: 80%;
+			font-size: 3vw;
+		}
+
+		.study img {
+			max-width: 3.6vw;
+			max-height: 3.6vw;
+		}
+    }
 </style>

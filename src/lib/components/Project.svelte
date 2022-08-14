@@ -137,6 +137,7 @@
         justify-content: space-around;
         align-items: center;
         margin: 0;
+        gap: 15px;
     }
 
     .keywords {

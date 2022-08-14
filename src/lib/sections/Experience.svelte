@@ -25,12 +25,11 @@
 		/>
 
 		<Card
-			title="Frontend"
+			title="Frontend Development"
 			icon={VueIcon}
 			description="Competent in basic HTML, CSS, JS/TS, as well as web
 			frameworks like Vue.js, Svelte and Yii2. Implemented 3D web
-			applications using Three.js, created npm modules exported as
-			web components."
+			applications using Three.js."
 		/>
 
 		<Card
@@ -60,18 +59,23 @@
 	}
 
 	.expertise {
+		width: 80%;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		align-items: center;
-		gap: 5%;
+		justify-content: center;
+		gap: 35px;
 		margin-bottom: 7rem;
 	}
 
 	.work-studies {
+		width: 90%;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: center;
-		gap: 7%;
+		gap: 50px;
 	}
 </style>
