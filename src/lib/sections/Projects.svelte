@@ -89,6 +89,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 300px;
+		margin-top: 150px;
 	}
 </style>

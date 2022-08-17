@@ -32,6 +32,7 @@
 		padding: 5px 20px;
 		margin: 0;
 		cursor: pointer;
+		box-sizing: border-box;
 
 		font-family: "K2D ExtraLight Regular";
 		color: rgb(223, 223, 223);
@@ -53,6 +54,7 @@
 		transition: max-height 0.4s ease-out;
 		overflow: hidden;
 		font-family: "K2D ExtraLight Regular";
+		box-sizing: border-box;
 	}
 
 	.work-drop.shown {
@@ -78,13 +80,13 @@
 
 	@media (max-width: 540px) {
         .work {
-			width: 80%;
+			width: 100%;
 			font-size: 3vw;
 			padding: 0.7vw 4vw;
 		}
 
 		.work-drop {
-			width: 80%;
+			width: 100%;
 			font-size: 3vw;
 		}
 

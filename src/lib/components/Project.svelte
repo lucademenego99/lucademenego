@@ -127,6 +127,7 @@
         text-align: left;
         background-color: #223345;
         box-shadow: 0px 4px 13px 8px rgba(0, 0, 0, 0.25);
+        max-width: 100%;
     }
 
     .description.flipped {
@@ -138,6 +139,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
         align-items: center;
         margin: 0;
         gap: 15px;

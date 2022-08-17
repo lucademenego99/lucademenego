@@ -71,6 +71,8 @@
 		justify-content: space-between;
 		align-items: center;
 		list-style: none;
+		box-sizing: border-box;
+		padding: 0;
 	}
 
 	.nav-list li {
@@ -149,6 +151,12 @@
 		top: -5px;
 	}
 
+	@media (max-width: 1020px) {
+		.nav-content {
+			width: 70%;
+		}
+	}
+
 	@media (max-width: 768px) {
 		header .menu-btn {
 			display: block;
@@ -175,7 +183,7 @@
 		.nav::before, .nav::after {
 			content: "";
 			position: absolute;
-			width:100vw;
+			width:100%;
 			height:50vh;
 			background-color: rgba(234, 234, 234, .2);
 			z-index: -1;
