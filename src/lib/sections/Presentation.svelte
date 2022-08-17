@@ -52,8 +52,8 @@
 	}
 
 	.about-arrow {
-		position: relative;
-		top: calc(50% - (var(--header-height) / 2));
+		position: absolute;
+		bottom: 30px;
 		transition: transform 0.2s ease-in-out;
 		cursor: pointer;
 		-webkit-animation: arrow-anim 1.5s infinite;

@@ -54,20 +54,23 @@
 
 <style>
     .project {
-        width: 70%;
+        width: 95%;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         margin: 1rem 0 6rem 0;
     }
 
     .project img {
-        max-width: 600px;
-        max-height: 600px;
+        width: 600px;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .project.flipped {
-        justify-content: flex-end;
         flex-direction: row-reverse;
     }
 
@@ -175,5 +178,36 @@
         background-color: #a5a5a5;
         position: absolute;
         left: calc(100% + 10px);
+    }
+
+    @media (max-width: 1460px) {
+        .project-main {
+            order: 1;
+        }
+
+        img {
+            order: 2;
+        }
+
+        .keywords {
+            order: 3;
+        }
+
+        .keywords ul, .keywords ul.flipped {
+            display: inline-block;
+        }
+
+        .keywords ul > li, .keywords ul.flipped > li{
+            display: inline-block;
+            margin: 5%;
+        }
+
+        .keywords ul::before, .keywords ul.flipped::after {
+            display: none;
+        }
+
+        .description, .description.flipped {
+            left: 0;
+        }
     }
 </style>

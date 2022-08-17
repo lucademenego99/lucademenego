@@ -67,6 +67,7 @@
 		justify-content: center;
 		gap: 35px;
 		margin-bottom: 7rem;
+		font-family: "K2D Medium Regular";
 	}
 
 	.work-studies {

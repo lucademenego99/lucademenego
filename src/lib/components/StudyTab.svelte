@@ -16,8 +16,8 @@
             on mathematics, physics and statistics.
         </p>
         <p>
-            I have been introduced to how computers and operating systems work,
-            to different fields, such as computer and network security,
+            I have been introduced to how computers and operating systems work
+            and to different fields, such as computer and network security,
             human-computer interaction and machine learning. More focus has been
             put to algorithms, data structures, software engineering and
             databases.
