@@ -55,6 +55,7 @@
 	@media (max-width: 1320px) {
 		.row {
 			flex-direction: column;
+			width: 80%;
 		}
 	}
 </style>

@@ -8,6 +8,8 @@
     <h3>Studies.</h3>
 
     <DropdownStudy tabTitle="Bachelor @ University of Trento (TN)">
+        <p><strong>Department of information engineering and computer science</strong></p>
+        <p><strong>Course: Computer Science Bachelor</strong></p>
         <p><strong>Sep 2018 - Jul 2021</strong></p>
         <p><strong>Grade: 110 cum laude</strong></p>
         <p>
@@ -25,6 +27,8 @@
     </DropdownStudy>
 
     <DropdownStudy tabTitle="Master @ University of Trento (TN)">
+        <p><strong>Department of information engineering and computer science</strong></p>
+        <p><strong>Course: Computer Science Master</strong></p>
         <p><strong>Sep 2021 - ???</strong></p>
         <p><strong>Grade: ???</strong></p>
         <p>

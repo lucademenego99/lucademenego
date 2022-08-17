@@ -184,7 +184,8 @@
 			content: "";
 			position: absolute;
 			width:100%;
-			height:50vh;
+			height:300px;
+			max-height: 100vh;
 			background-color: rgba(234, 234, 234, .2);
 			z-index: -1;
 			transition: transform cubic-bezier(.77,0,.175,1) .8s;
@@ -202,7 +203,9 @@
 
 		.nav-content{
 			position: absolute;
-			top: 110px;
+			top: 65px;
+			padding-left: 40px;
+			box-sizing: border-box;
 			width: 100%;
 			text-align: center;
 			cursor: default;
