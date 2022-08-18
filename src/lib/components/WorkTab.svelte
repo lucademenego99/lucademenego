@@ -1,5 +1,4 @@
 <!-- Tab showing my work experiences -->
-
 <script lang="ts">
     import DropdownWork from "../components/DropdownWork.svelte";
 </script>
@@ -38,7 +37,8 @@
         </p>
         <p>
             Regarding the backend, it is primarily based on C#, which is also
-            used to develop SAP add-ons and Windows Forms.
+            used to develop SAP add-ons and Windows Forms. The databases used
+            are MySQL and SAP HANA.
         </p>
         <p>
             During these years I also gained some experience in the Google Cloud

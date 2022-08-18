@@ -70,6 +70,10 @@
         max-height: 100%;
     }
 
+    .project img:hover ~ .project-main .description {
+        left: 0;
+    }
+
     .project.flipped {
         flex-direction: row-reverse;
     }
@@ -128,6 +132,7 @@
         background-color: #223345;
         box-shadow: 0px 4px 13px 8px rgba(0, 0, 0, 0.25);
         max-width: 100%;
+        transition: left 0.3s ease;
     }
 
     .description.flipped {

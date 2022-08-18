@@ -51,11 +51,13 @@
     --primary-color: #9B37FF;
     --primary-color-dark: #430D79;
     --primary-color-dark-bright: #4b1383;
+    --primary-color-dark-brighter: #59179c;
     --primary-color-bright: #a850ff;
     --primary-color-alpha: #9b37ffb0;
     --primary-color-less-alpha: #9b37ff2f;
     --secondary-color: #00489b;
     --secondary-color-bright: #0c53a5;
+    --secondary-color-brighter: #0d5cb6;
     --small-font-size: 14px;
     --medium-font-size: 16px;
     --large-font-size: 20px;

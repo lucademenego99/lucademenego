@@ -9,7 +9,7 @@
 </script>
 
 <div>
-	<div class="work" on:click={() => (showTab = !showTab)}>
+	<div class="work" class:shown={showTab} on:click={() => (showTab = !showTab)}>
 		<p class="tab-item-title">{tabTitle}</p>
 		<img src={DownIcon} alt="" class:rotate={showTab} />
 	</div>
@@ -22,7 +22,7 @@
 	.work {
 		color: black;
 		background-color: var(--primary-color-dark);
-		transition: background-color 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
 		border-radius: 37px;
 		width: 450px;
 		display: flex;
@@ -41,8 +41,18 @@
 		font-size: 16px;
 	}
 
+	.work.shown {
+		background-color: var(--primary-color-dark-bright);
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
 	.work:hover {
 		background-color: var(--primary-color-dark-bright);
+	}
+
+	.work.shown:hover {
+		background-color: var(--primary-color-dark-brighter);
 	}
 
 	.work-drop {
@@ -65,12 +75,12 @@
 	.work img {
 		max-width: 20px;
 		max-height: 20px;
-		transition: transform 0.2s ease-in;
+		transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	}
 
 	.work img.rotate {
-		transform: rotate(·180deg);
-		-webkit-transform: rotate(-180deg);
+		transform: rotate(-540deg);
+		-webkit-transform: rotate(-540deg);
 	}
 
 	.tab-item-title {

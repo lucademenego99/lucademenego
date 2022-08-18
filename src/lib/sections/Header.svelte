@@ -30,7 +30,7 @@
 				</ol>
 			</div>
 		</div>
-		<div class="divider" data-aos="fade" data-aos-delay="450" />
+		<!-- <div class="divider" data-aos="fade" data-aos-delay="450" /> -->
 	</nav>
 </header>
 
@@ -61,7 +61,7 @@
 	}
 
 	.nav-content {
-		width: 50%;
+		width: 40%;
 	}
 
 	.nav-list {
@@ -104,7 +104,7 @@
 	}
 
 	.divider {
-		width: 50%;
+		width: 30%;
 		height: 1px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	}
@@ -149,6 +149,12 @@
 
 	header .menu-icon .navicon:after {
 		top: -5px;
+	}
+
+	@media (max-width: 1260px) {
+		.nav-content {
+			width: 50%;
+		}
 	}
 
 	@media (max-width: 1020px) {

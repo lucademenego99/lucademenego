@@ -9,7 +9,7 @@
 </script>
 
 <div>
-    <div class="study" on:click={() => (showTab = !showTab)}>
+    <div class="study" class:shown={showTab} on:click={() => (showTab = !showTab)}>
         <p class="tab-item-title">{tabTitle}</p>
         <img src={DownIcon} alt="" class:rotate={showTab} />
     </div>
@@ -21,8 +21,8 @@
 <style>
     .study {
 		color: black;
-		background-color: var(--primary-color-dark);
-		transition: background-color 0.2s ease-in-out;
+		background-color: var(--secondary-color);
+		transition: all 0.2s ease-in-out;
 		border-radius: 37px;
 		width: 450px;
 		display: flex;
@@ -41,8 +41,18 @@
 		font-size: 16px;
 	}
 
+	.study.shown {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		background-color: var(--secondary-color-bright);
+	}
+
 	.study:hover {
 		background-color: var(--secondary-color-bright);
+	}
+
+	.study.shown:hover {
+		background-color: var(--secondary-color-brighter);
 	}
 
 	.study-drop {
@@ -69,21 +79,17 @@
 	.study img {
 		max-width: 20px;
 		max-height: 20px;
-		transition: transform 0.2s ease-in;
+		transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	}
 
 	.study img.rotate {
-		transform: rotate(·180deg);
-		-webkit-transform: rotate(-180deg);
+		transform: rotate(-540deg);
+		-webkit-transform: rotate(-540deg);
 	}
 
 	.tab-item-title {
 		margin: 0;
 		padding: 10px 0px;
-	}
-
-	.study {
-		background-color: var(--secondary-color);
 	}
 
 	@media (max-width: 540px) {
