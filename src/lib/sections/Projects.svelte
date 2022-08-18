@@ -1,8 +1,11 @@
 <script lang="ts">
 	import GithubIcon from "../../assets/github.svg";
 	import TiddlywikiIcon from "../../assets/tiddlywiki.svg";
+	import TiddlywikiBlackIcon from "../../assets/tiddlywiki-black.svg";
 	import JupyterIcon from "../../assets/jupyter.svg";
+	import JupyterBlackIcon from "../../assets/jupyter-black.svg";
 	import DocumentIcon from "../../assets/document.svg";
+	import DocumentBlackIcon from "../../assets/document-black.svg";
 
 	import SectionTitle from "../components/SectionTitle.svelte";
 	import Project from "../components/Project.svelte";
@@ -29,7 +32,9 @@
 		primaryIcon={GithubIcon}
 		primaryLink="https://github.com/lucademenego99/icp-bundle"
 		primaryText="View it on Github"
+		primarySmallText="Github"
 		secondaryIcon={TiddlywikiIcon}
+		secondarySmallIcon={TiddlywikiBlackIcon}
 		secondaryLink="https://lucademenego99.github.io/icp-tiddlywiki/"
 		secondaryText="Tiddlywiki"
 		keywords={["Svelte", "Typescript", "Pyodide", "TeaVM"]}
@@ -44,7 +49,9 @@
 		primaryIcon={GithubIcon}
 		primaryLink="https://github.com/lucademenego99/uda"
 		primaryText="View it on Github"
+		primarySmallText="Github"
 		secondaryIcon={JupyterIcon}
+		secondarySmallIcon={JupyterBlackIcon}
 		secondaryLink="https://github.com/lucademenego99/uda/blob/master/uda/notebook/notebook.ipynb"
 		secondaryText="Notebook"
 		keywords={["Python", "PyTorch", "Adaptiope"]}
@@ -59,7 +66,9 @@
 		primaryIcon={GithubIcon}
 		primaryLink="https://github.com/lucademenego99/multilevel-cache"
 		primaryText="View it on Github"
+		primarySmallText="Github"
 		secondaryIcon={DocumentIcon}
+		secondarySmallIcon={DocumentBlackIcon}
 		secondaryLink="https://github.com/lucademenego99/multilevel-cache/blob/master/doc/Report.pdf"
 		secondaryText="Report"
 		keywords={["Java", "Akka", "JUnit Tests"]}
@@ -74,7 +83,9 @@
 		primaryIcon={GithubIcon}
 		primaryLink="https://github.com/lucademenego99/AppliedRoboticsStudentInterface"
 		primaryText="View it on Github"
+		primarySmallText="Github"
 		secondaryIcon={DocumentIcon}
+		secondarySmallIcon={DocumentBlackIcon}
 		secondaryLink="https://github.com/lucademenego99/AppliedRoboticsStudentInterface/blob/master/Paper.pdf"
 		secondaryText="Report"
 		keywords={["C++", "ROS", "Clipper"]}

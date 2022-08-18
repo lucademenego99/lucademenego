@@ -3,6 +3,8 @@
 <script lang="ts">
     import PrimaryButton from "./PrimaryButton.svelte";
     import SecondaryButton from "./SecondaryButton.svelte";
+    import SmallPrimaryButton from "./SmallPrimaryButton.svelte";
+    import SmallSecondaryButton from "./SmallSecondaryButton.svelte";
 
     export let isFlipped;
     export let image;
@@ -12,7 +14,9 @@
     export let primaryIcon;
     export let primaryLink;
     export let primaryText;
+    export let primarySmallText;
     export let secondaryIcon;
+    export let secondarySmallIcon;
     export let secondaryLink;
     export let secondaryText;
     export let keywords;
@@ -24,57 +28,94 @@
     data-aos="fade-up"
     data-aos-delay={aosDelay}
 >
-    <img src={image} alt="Project's screenshot" />
-    <div class="project-main" class:flipped={isFlipped}>
-        <h3 class="project-title" class:flipped={isFlipped}>{title}</h3>
-        <div class="description" class:flipped={isFlipped}>
+    <div class="default-ui" class:flipped={isFlipped}>
+        <img src={image} alt="Project's screenshot" />
+        <div class="project-main" class:flipped={isFlipped}>
+            <h3 class="project-title" class:flipped={isFlipped}>{title}</h3>
+            <div class="description" class:flipped={isFlipped}>
+                <p>{description}</p>
+            </div>
+            <div class="buttons">
+                <PrimaryButton
+                    text={primaryText}
+                    icon={primaryIcon}
+                    link={primaryLink}
+                />
+                <SecondaryButton
+                    text={secondaryText}
+                    icon={secondaryIcon}
+                    link={secondaryLink}
+                />
+            </div>
+        </div>
+        <div class="keywords">
+            <ul class:flipped={isFlipped}>
+                {#each keywords as keyword}
+                    <li>{keyword}</li>
+                {/each}
+            </ul>
+        </div>
+    </div>
+
+    <div class="small-ui">
+        <h3 class="project-title">{title}</h3>
+        <img src={image} alt="Project's screenshot" />
+        <div class="description">
             <p>{description}</p>
         </div>
+        <div class="keywords-small">
+            <ul class:flipped={isFlipped}>
+                {#each keywords as keyword}
+                    <li>{keyword}</li>
+                {/each}
+            </ul>
+        </div>
         <div class="buttons">
-            <PrimaryButton
-                text={primaryText}
+            <SmallPrimaryButton
+                text={primarySmallText}
                 icon={primaryIcon}
                 link={primaryLink}
             />
-            <SecondaryButton
+            <SmallSecondaryButton
                 text={secondaryText}
-                icon={secondaryIcon}
+                icon={secondarySmallIcon}
                 link={secondaryLink}
             />
         </div>
-    </div>
-    <div class="keywords">
-        <ul class:flipped={isFlipped}>
-            {#each keywords as keyword}
-                <li>{keyword}</li>
-            {/each}
-        </ul>
     </div>
 </div>
 
 <style>
     .project {
         width: 95%;
+        margin: 1rem 0 6rem 0;
+    }
+
+    .default-ui {
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 1rem 0 6rem 0;
     }
 
-    .project img {
-        width: 600px;
+    .small-ui {
+        display: none;
+    }
+
+    .project .default-ui img {
+        width: auto;
         height: auto;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 600px;
+        max-height: 400px;
     }
 
-    .project img:hover ~ .project-main .description {
+    .project .default-ui img:hover ~ .project-main .description {
         left: 0;
     }
 
-    .project.flipped {
+    .default-ui.flipped {
         flex-direction: row-reverse;
     }
 
@@ -215,6 +256,97 @@
 
         .description, .description.flipped {
             left: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .default-ui {
+            display: none;
+        }
+
+        .small-ui {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: white;
+            border-radius: 7px;
+            border-top: 7px solid var(--primary-color);
+        }
+
+        .small-ui img {
+            align-self: center;
+            height: auto;
+            max-width: 90%;
+            max-height: 300px;
+        }
+
+        .small-ui .project-title {
+            font-size: 23px;
+            font-weight: 100;
+            color: #363636;
+            padding: 0;
+            margin: 10px 0 0 20px;
+            letter-spacing: 0.08em;
+        }
+
+        .small-ui .project-title::after {
+            content: "";
+            display: block;
+            width: 105%;
+            border-radius: 17px;
+            height: 2px;
+            z-index: -1;
+            background-color: var(--primary-color);
+            margin: 0 0 15px 0;
+            position: relative;
+            bottom: 17px;
+        }
+
+        .small-ui .description {
+            order: 3;
+            background-color: transparent;
+            box-shadow: none;
+            font-family: "K2D Light Regular";
+            font-size: 16px;
+            font-weight: 100;
+            letter-spacing: 0.08em;
+            color: black;
+            padding: 0 15px;
+            margin: 0;
+            text-align: left;
+            max-width: 100%;
+        }
+
+        .small-ui .keywords-small {
+            width: 100%;
+            order: 3;
+        }
+
+        .small-ui .keywords-small ul {
+            font-family: "K2D Thin Regular";
+            list-style-type: none;
+            font-size: 12px;
+            font-weight: 100;
+            letter-spacing: 0.2em;
+            color: var(--grey-color);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+        }
+
+        .small-ui .buttons {
+            order: 4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            flex-wrap: nowrap;
         }
     }
 </style>
