@@ -48,7 +48,7 @@
 		filter: opacity(50%) blur(2px) drop-shadow(18px 18px 5px var(--primary-color));
 		transition: filter 0.2s ease-in-out;
 		width: 500px;
-		height: 500px;
+		height: auto;
 		max-width: 90vw;
 	}
 	img:hover {
