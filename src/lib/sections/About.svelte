@@ -50,6 +50,7 @@
 		width: 500px;
 		height: auto;
 		max-width: 90vw;
+		border-radius: 50%;
 	}
 	img:hover {
 		filter: none;

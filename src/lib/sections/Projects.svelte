@@ -13,7 +13,7 @@
 	import ICPImage from "../../assets/icp.png";
 	import UDAImage from "../../assets/uda.png";
 	import MLCImage from "../../assets/mlc.png";
-	import PEGImage from "../../assets/peg.png";
+	import SDNImage from "../../assets/sdn-slicing.png";
 </script>
 
 <div class="projects" id="projects">
@@ -31,12 +31,12 @@
 		description="A front-end web technology that integrates executable code in HTML slideshows.  This incremental evolution of traditional slideshows aims to reduce friction in learning to code, and enables more scaffolded and active teaching."
 		primaryIcon={GithubIcon}
 		primaryLink="https://github.com/lucademenego99/icp-bundle"
-		primaryText="View it on Github"
+		primaryText="Source Code"
 		primarySmallText="Github"
 		secondaryIcon={TiddlywikiIcon}
 		secondarySmallIcon={TiddlywikiBlackIcon}
 		secondaryLink="https://lucademenego99.github.io/icp-tiddlywiki/"
-		secondaryText="Tiddlywiki"
+		secondaryText="TW notebook"
 		keywords={["Svelte", "Typescript", "Pyodide", "TeaVM"]}
 	/>
 
@@ -48,12 +48,12 @@
 		description="Collection of methods concerning unsupervised domain adaptation techniques, namely: Deep Domain Confusion, Domain Adversarial NN, Domain Separation Networks, Entropy Minimization vs. Diversity Maximization."
 		primaryIcon={GithubIcon}
 		primaryLink="https://github.com/lucademenego99/uda"
-		primaryText="View it on Github"
+		primaryText="Source Code"
 		primarySmallText="Github"
 		secondaryIcon={JupyterIcon}
 		secondarySmallIcon={JupyterBlackIcon}
 		secondaryLink="https://github.com/lucademenego99/uda/blob/master/uda/notebook/notebook.ipynb"
-		secondaryText="Notebook"
+		secondaryText="Jupyter"
 		keywords={["Python", "PyTorch", "Adaptiope"]}
 	/>
 
@@ -65,30 +65,30 @@
 		description="Implementation of a distributed architecture consisting of multiple caches, guaranteeing client-centric consistency in an environment in which caches may fail by crashing."
 		primaryIcon={GithubIcon}
 		primaryLink="https://github.com/lucademenego99/multilevel-cache"
-		primaryText="View it on Github"
+		primaryText="Source Code"
 		primarySmallText="Github"
 		secondaryIcon={DocumentIcon}
 		secondarySmallIcon={DocumentBlackIcon}
 		secondaryLink="https://github.com/lucademenego99/multilevel-cache/blob/master/doc/Report.pdf"
-		secondaryText="Report"
+		secondaryText="Documentation"
 		keywords={["Java", "Akka", "JUnit Tests"]}
 	/>
 
 	<Project
 		isFlipped={true}
-		image={PEGImage}
+		image={SDNImage}
 		aosDelay="400"
-		title="Evader and Pursuer Game"
-		description="This project contains a set of devised algorithms allowing to find collision-free Dubins shortest paths for a robot moving in an environment filled with obstacles. Finally, two robots compete between each other in an evader-pursuer game."
+		title="On-demand SDN slicing"
+		description="The project involves the development of a solution based on ComNetsEmu allowing to activate and de-activate SDN slices on-demand. The slicing approach is topology-based, and QoS settings can be configured when creating virtual networks."
 		primaryIcon={GithubIcon}
-		primaryLink="https://github.com/lucademenego99/AppliedRoboticsStudentInterface"
-		primaryText="View it on Github"
+		primaryLink="https://github.com/lucademenego99/on-demand-sdn-slices"
+		primaryText="Source Code"
 		primarySmallText="Github"
 		secondaryIcon={DocumentIcon}
 		secondarySmallIcon={DocumentBlackIcon}
-		secondaryLink="https://github.com/lucademenego99/AppliedRoboticsStudentInterface/blob/master/Paper.pdf"
-		secondaryText="Report"
-		keywords={["C++", "ROS", "Clipper"]}
+		secondaryLink="https://github.com/lucademenego99/on-demand-sdn-slices/blob/main/report_and_slides/Report.pdf"
+		secondaryText="Documentation"
+		keywords={["Python", "Ryu", "MiniNet"]}
 	/>
 </div>
 
