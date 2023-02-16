@@ -1,6 +1,9 @@
 <!-- Header of the page -->
 
 <script lang="ts">
+    import SecondaryButton from "../components/SecondaryButton.svelte";
+	import Resume from "../../assets/Resume.pdf";
+
 	let checkButton: HTMLInputElement;
 
 	function uncheck() {
@@ -29,6 +32,9 @@
 					</li>
 				</ol>
 			</div>
+		</div>
+		<div class="align-right">
+			<SecondaryButton text="Check my Resume" icon="" link={Resume} />
 		</div>
 		<!-- <div class="divider" data-aos="fade" data-aos-delay="450" /> -->
 	</nav>
@@ -151,6 +157,16 @@
 		top: -5px;
 	}
 
+	.align-right {
+		position: absolute;
+		right: 3em;
+		top: 2em;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+	}
+
 	@media (max-width: 1260px) {
 		.nav-content {
 			width: 50%;
@@ -160,6 +176,10 @@
 	@media (max-width: 1020px) {
 		.nav-content {
 			width: 70%;
+		}
+
+		.align-right {
+			top: 6em;
 		}
 	}
 
@@ -306,6 +326,11 @@
 		header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 		header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 			top: 0;
+		}
+
+		.align-right {
+			right: 1.5em;
+			top: 2em;
 		}
 	}
 </style>
