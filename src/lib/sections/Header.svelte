@@ -15,6 +15,9 @@
 	<input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" bind:this="{checkButton}" />
 	<label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
 	<nav>
+		<div class="align-right">
+			<SecondaryButton text="Check my Resume" icon="" link={Resume} />
+		</div>
 		<div class="nav">
 			<div class="nav-content">
 				<ol class="nav-list">
@@ -32,9 +35,6 @@
 					</li>
 				</ol>
 			</div>
-		</div>
-		<div class="align-right">
-			<SecondaryButton text="Check my Resume" icon="" link={Resume} />
 		</div>
 		<!-- <div class="divider" data-aos="fade" data-aos-delay="450" /> -->
 	</nav>
