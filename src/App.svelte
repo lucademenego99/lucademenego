@@ -31,11 +31,14 @@
 </div>
 
 <svelte:head>
-  <style>
-    /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap"); */
-
-    
-  </style>
+  <title>Luca De Menego | Full Stack Developer | Flutter Enthusiast</title>
+  <meta name="description" content="I'm Luca, a versatile full stack developer proficient in C#, Python, Node.js, and more. Experienced in RESTful APIs, gRPC, and microservices. Skilled in Vue.js, Svelte, and Yii2 for web frameworks. Adept at crafting 3D web apps with Three.js. Expert in Flutter for mobile apps with ARKit and ARCore. Contributed to infrastructure enhancements leveraging SAP B1. IT Head at Thema Optical.">
+  <meta name="keywords" content="full stack developer, Flutter mobile app, C#, Python, Node.js, Vue.js, Svelte, Yii2, ARKit, ARCore, Three.js, gRPC, Firebase Cloud Messaging, AWS DynamoDB, software monitoring, IT head, Thema Optical">
+  <meta property="og:title" content="Luca De Menego | Full Stack Developer | Flutter Enthusiast">
+  <meta property="og:description" content="I'm Luca, a versatile full stack developer proficient in C#, Python, Node.js, and more. Experienced in RESTful APIs, gRPC, and microservices. Skilled in Vue.js, Svelte, and Yii2 for web frameworks. Adept at crafting 3D web apps with Three.js. Expert in Flutter for mobile apps with ARKit and ARCore. Contributed to infrastructure enhancements leveraging SAP B1. IT Head at Thema Optical.">
+  <meta property="og:image" content="/og-thumbnail.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://lucademenego99.github.io/lucademenego/">
 </svelte:head>
 
 <style>

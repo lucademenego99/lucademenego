@@ -29,8 +29,8 @@
     <DropdownStudy tabTitle="Master @ University of Trento (TN)">
         <p><strong>Department of information engineering and computer science</strong></p>
         <p><strong>Course: Computer Science Master</strong></p>
-        <p><strong>Sep 2021 - ???</strong></p>
-        <p><strong>Grade: ???</strong></p>
+        <p><strong>Sep 2021 - Jul 2023</strong></p>
+        <p><strong>Grade: 110 cum laude</strong></p>
         <p>
             The master allowed me to go deeper into the aspects of computer
             science I personally found more interesting, namely Machine/Deep
