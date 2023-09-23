@@ -25,7 +25,7 @@
     </DropdownWork>
 
     <DropdownWork tabTitle="Developer @ Thema Optical (BL)">
-        <p><strong>Jul 2020 - Present</strong></p>
+        <p><strong>Jul 2022 - Present</strong></p>
         <p>At Thema I am mostly working on the development of:</p>
         <ul>
             <li>Flutter applications for iOS and Android</li>
@@ -44,6 +44,31 @@
             During these years I also gained some experience in the Google Cloud
             Platform and its main components.
         </p>
+    </DropdownWork>
+
+    <DropdownWork tabTitle="IT Head @ Thema Optical (BL)">
+        <p><strong>Jul 2020 - Jul 2023</strong></p>
+        <p>
+            Upon my promotion, I assumed leadership of a dynamic team of
+            developers and IT experts, offering guidance, mentorship, and
+            strategic oversight to ensure project execution.
+        </p>
+        <p>
+            Together with my team, I continued working on web and mobile
+            applications, as in the previous role's description.
+        </p>
+        <p>In addition, I am:</p>
+        <ul>
+            <li>
+                managing and driving the optimization of SAP B1 infrastructure,
+                enhancing business operations and guaranteeing system
+                reliability and performance;
+            </li>
+            <li>
+                developing .NET applications interfacing with SAP B1 for
+                seamless data integration and workflow automation.
+            </li>
+        </ul>
     </DropdownWork>
 </div>
 
